@@ -90,9 +90,8 @@ def main():
   solve_maze(maze, 4, 1, path)
   if not path:
     sys.exit("maze can't be solved")
-  print_maze(maze)
-  path.reverse()
 
+  path.reverse()
   maze = get_maze()
   for cell in path:
     maze[cell[0]][cell[1]] = 'x'
