@@ -18,7 +18,7 @@ def combinations(s):
     return l
 
 def main():
-  print combinations("w")
+  print combinations("wxyz")
 
 if __name__ == "__main__":
   main()
