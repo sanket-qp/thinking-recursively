@@ -1,6 +1,8 @@
 def combinations(s):
   # base case, for string of length 2
-  if (len(s) == 2):
+  if not s:
+    return []
+  elif (len(s) == 2):
     # combinations are , (string itself, first character, second charactor)
     return [s, s[0], s[1]]
   else:
@@ -16,7 +18,7 @@ def combinations(s):
     return l
 
 def main():
-  print combinations("wxyz")
+  print combinations("w")
 
 if __name__ == "__main__":
   main()
