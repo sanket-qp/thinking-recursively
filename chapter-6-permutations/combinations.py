@@ -1,7 +1,7 @@
 def combinations(s):
-  # base case, for string of length 2
   if not s:
     return []
+  # base case, for string of length 2
   elif (len(s) == 2):
     # combinations are , (string itself, first character, second charactor)
     return [s, s[0], s[1]]
